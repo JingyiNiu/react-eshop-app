@@ -22,3 +22,11 @@ React Router
 ```
 npm install react-router-dom
 ```
+
+## Backend
+Firebase
+> https://firebase.google.com/docs
+> https://www.npmjs.com/package/firebase
+```
+npm i firebase
+```
