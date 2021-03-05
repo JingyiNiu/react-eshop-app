@@ -4,7 +4,7 @@ import './form-input.style.scss';
 
 const FormInput = ({ handleChange, label, ...otherProps }) => (
     <div className='group'>
-        <input className='form-input' onchange={handleChange} {...otherProps} />
+        <input className='form-input' onChange={handleChange} {...otherProps} />
         {
             //if there is a label, then render a label, otherwise, nothing
             label ? (

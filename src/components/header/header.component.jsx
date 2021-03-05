@@ -1,24 +1,39 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import { ReactComponent as Logo } from '../../assets/home.svg';
+import { auth } from "../../firebase/firebase.config";
 
-import './header.style.scss';
+import { ReactComponent as Logo } from "../../assets/home.svg";
 
-const Header = () => (
-    <div className='header'>
-        <Link className='logo-container' to="/">
-            <Logo className='logo'/>
-        </Link>
-        <div className='options'>
-            <Link className='option' to='/shop'>
-                SHOP
-            </Link>
-            <Link className='option' to='/shop'>
-                CONTACT
-            </Link>
-        </div>
+import "./header.style.scss";
+
+const Header = ({ currentUser }) => (
+  <div className="header">
+    <Link className="logo-container" to="/">
+      <Logo className="logo" />
+    </Link>
+    <div className="options">
+      <Link className="option" to="/shop">
+        SHOP
+      </Link>
+      <Link className="option" to="/shop">
+        CONTACT
+      </Link>
+
+      {
+        // if there is a user, render a div. if not, render a link
+        currentUser ? (
+          <div className="option" onClick={() => auth.signOut()}>
+            SIGN OUT
+          </div>
+        ) : (
+          <Link className="option" to="./signin">
+            SIGN IN
+          </Link>
+        )
+      }
     </div>
-)
+  </div>
+);
 
 export default Header;
