@@ -30,14 +30,13 @@ class App extends React.Component {
 
         // get back userRef, and combine uid and other properties
         userRef.onSnapshot((snapShot) => {
-          this.setState(
-            {
-              currentUser: {
-                id: snapShot.id,
-                ...snapShot.data(),
-              },
-            }
-          );
+          this.setState({
+            currentUser: {
+              id: snapShot.id,
+              ...snapShot.data(),
+            },
+          });
+          console.log(this.state);
         });
       } else {
         // if userAuth doesn't exist, set currentUser to null
