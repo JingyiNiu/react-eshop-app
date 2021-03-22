@@ -61,43 +61,43 @@ class Register extends React.Component {
     // destructure
     const { displayName, email, password, confirmPassword } = this.state;
     return (
-      <div className="register">
-        <h2 className="title"> I do not have an account</h2>
+      <div className='register'>
+        <h2 className='title'> I do not have an account</h2>
         <span>Register with your email and password</span>
-        <form className="register-form" onSubmit={this.handleSubmit}>
+        <form className='register-form' onSubmit={this.handleSubmit}>
           <FormInput
-            type="text"
-            name="displayName"
+            type='text'
+            name='displayName'
             value={displayName}
             onChange={this.handleChange}
-            label="Display Name"
+            label='Display Name'
             required
           />
           <FormInput
-            type="text"
-            name="email"
+            type='text'
+            name='email'
             value={email}
             onChange={this.handleChange}
-            label="Email"
+            label='Email'
             required
           />
           <FormInput
-            type="text"
-            name="password"
+            type='text'
+            name='password'
             value={password}
             onChange={this.handleChange}
-            label="Password"
+            label='Password'
             required
           />
           <FormInput
-            type="text"
-            name="confirmPassword"
+            type='text'
+            name='confirmPassword'
             value={confirmPassword}
             onChange={this.handleChange}
-            label="Confirm Password"
+            label='Confirm Password'
             required
           />
-          <CustomButton type="submit">Register</CustomButton>
+          <CustomButton type='submit'>Register</CustomButton>
         </form>
       </div>
     );
