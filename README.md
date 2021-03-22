@@ -30,3 +30,6 @@ Firebase
 ```
 npm i firebase
 ```
+
+## Screenshots
+![](https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/home.png)
