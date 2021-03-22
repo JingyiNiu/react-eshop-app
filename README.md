@@ -32,6 +32,6 @@ npm i firebase
 ```
 
 ## Screenshots
-![](https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/home.png)
+<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/home.png' width='400' alt='home'/>
 ![](https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/sign-in-and-register.png)
 ![](https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/shop.png)
