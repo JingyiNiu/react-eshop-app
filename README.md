@@ -31,6 +31,11 @@ Firebase
 npm i firebase
 ```
 
+## Redux
+```
+npm install --save redux react-redux redux-logger
+```
+
 ## Screenshots
 <img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/home.png' width='400' alt='home'/><img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/sign-in-and-register.png' width='400' alt='sign-in-and-register'/>
 <img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/shop.png' width='400' alt='shop'/>
