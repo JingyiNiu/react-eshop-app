@@ -33,3 +33,5 @@ npm i firebase
 
 ## Screenshots
 ![](https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/home.png)
+![](https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/shop.png)
+![](https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/sign-in-and-register)
