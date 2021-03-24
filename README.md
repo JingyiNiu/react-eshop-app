@@ -37,6 +37,6 @@ npm install --save redux react-redux redux-logger
 ```
 
 ## Screenshots
-<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/home.png' width='600' alt='home'/>
+<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/homepage.png' width='600' alt='home'/>
 <img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/sign-in-and-register.png' width='600' alt='sign-in-and-register'/>
-<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/shop.png' width='600' alt='shop'/>
+<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/shop-and-cart.png' width='600' alt='shop'/>
