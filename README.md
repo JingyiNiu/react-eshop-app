@@ -31,10 +31,12 @@ Firebase
 npm i firebase
 ```
 
-## Redux
+## Redux and Reselect
 > https://react-redux.js.org/
+> https://www.npmjs.com/package/reselect
 ```
 npm install --save redux react-redux redux-logger
+npm install reselect
 ```
 
 ## Screenshots
