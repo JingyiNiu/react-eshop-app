@@ -1,6 +1,6 @@
 # React E-Commerce Shop Application
-This is a react app.
-I'm learning with several video tutorials and going to build an e-shop application
+
+I'm building an e-shop application with React, Redux, Hooks, GraphQL, ContextAPI, Stripe and Firebase
 
 ## Create React Project
 Create-react-app
