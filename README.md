@@ -47,4 +47,7 @@ npm install reselect
 <img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/sign-in-and-register.png' width='600' alt='sign-in-and-register'/>
 
 ###### Shop page and cart
-<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/shop-and-cart.png' width='600' alt='shop'/>
+<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/shop-page-and-cart.png' width='600' alt='shop'/>
+
+###### Checkout page
+<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/checkout-page.png' width='600' alt='shop'/>
