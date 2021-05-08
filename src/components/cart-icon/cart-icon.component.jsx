@@ -20,7 +20,7 @@ const mapDispatchToProps = (dispatch) => ({
   toggleCartHidden: () => dispatch(toggleCartHidden()),
 });
 
-// pass state and get itemCount back
+// select state.cart.cartItems of whole state using reselect library
 const mapStateToProps = createStructuredSelector({
   // calculate total quantity of all items in cart
   itemCount: selectCartItemsCount,

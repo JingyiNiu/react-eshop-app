@@ -1,23 +1,23 @@
 import { createSelector } from "reselect";
 
-// Selectork可以保留数据，其他状态变化（signin signout）不会影响购物车里的内容
+// Selector可以保留数据，其他状态变化（signin signout）不会影响购物车里的内容
 
-// get cart object from state
+// get cart object from whole state
 const selectCart = (state) => state.cart;
 
-// output cartItems
+// select state.cart.cartItems
 export const selectCartItems = createSelector(
   [selectCart],
   (cart) => cart.cartItems
 );
 
-// cart.hidden
+// select state.cart.hidden
 export const selectCartHidden = createSelector(
   [selectCart],
   (cart) => cart.hidden
 )
 
-// get cartItems and calculate itemsCount
+// select state.cart.cartItems, get each cartItem.quantity and calculate itemsCount
 export const selectCartItemsCount = createSelector(
   [selectCartItems],
   (cartItems) =>
@@ -28,7 +28,7 @@ export const selectCartItemsCount = createSelector(
     )
 );
 
-// get total price of all items
+// select state.cart.cartItems and calculate total price of all items
 export const selectCartTotal = createSelector(
   [selectCartItems],
   (cartItems) =>

@@ -71,10 +71,12 @@ class App extends React.Component {
   }
 }
 
+// redux store ==pull state==> props
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
 });
 
+// props ==update state==> redux store
 const mapDispatchToProps = (dispatch) => ({
   setCurrentUser: (user) => dispatch(setCurrentUser(user)),
 });

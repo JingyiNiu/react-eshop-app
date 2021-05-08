@@ -6,7 +6,8 @@ const FormInput = ({ handleChange, label, ...otherProps }) => (
   <div className='group'>
     <input className='form-input' onChange={handleChange} {...otherProps} />
     {
-      //if there is a label, then render a label, otherwise, nothing
+      // if there is a label then render a label, otherwise, render nothing
+      // when user is typeing then add a shrink class to lable
       label ? (
         <label
           className={`${

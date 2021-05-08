@@ -48,7 +48,7 @@ const Header = ({ currentUser, hidden }) => (
   </div>
 );
 
-// pass state to corresponding props
+// pass state to corresponding props using reselect library
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
   hidden: selectCartHidden,
