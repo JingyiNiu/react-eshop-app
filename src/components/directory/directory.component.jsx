@@ -15,6 +15,7 @@ const Directory = ({ sections }) => (
   </div>
 );
 
+// pass state.directory.sections to props(sections) using selector
 const mapStateToProps = createStructuredSelector({
   sections: selectDirectorySections,
 });
