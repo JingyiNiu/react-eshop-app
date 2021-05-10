@@ -4,49 +4,49 @@ I'm building an e-shop application with React, Redux, Hooks, GraphQL, ContextAPI
 
 ## Create React Project
 Create-react-app
-> https://github.com/facebook/create-react-app
+https://github.com/facebook/create-react-app
 ```
 npm init react-app <my-app>
 ```
 
 ## Styling
 Sass
-> https://www.npmjs.com/package/node-sass
+https://www.npmjs.com/package/node-sass
 ```
 npm install node-sass
 ```
 
 ## Route
 React Router
-> https://reactrouter.com/web/guides/quick-start
+https://reactrouter.com/web/guides/quick-start
 ```
 npm install react-router-dom
 ```
 
 ## Backend
 Firebase
-> https://firebase.google.com/docs
-> https://www.npmjs.com/package/firebase
+https://firebase.google.com/docs
+https://www.npmjs.com/package/firebase
 ```
 npm i firebase
 ```
 
 ## State Management
 Redux Core  
-> https://redux.js.org/  
+https://redux.js.org/  
 React Redux  
-> https://react-redux.js.org/  
+https://react-redux.js.org/  
 Redux Logger  
-> https://www.npmjs.com/package/redux-logger  
+https://www.npmjs.com/package/redux-logger  
 ```
 npm install redux react-redux redux-logger
 ```
 
 ## Other Libraries
 Reselect  
-> https://www.npmjs.com/package/reselect  
+https://www.npmjs.com/package/reselect  
 Redux Persist  
-> https://www.npmjs.com/package/redux-persist  
+https://www.npmjs.com/package/redux-persist  
 
 
 ## Screenshots
