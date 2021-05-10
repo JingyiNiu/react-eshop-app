@@ -3,50 +3,40 @@
 I'm building an e-shop application with React, Redux, Hooks, GraphQL, ContextAPI, Stripe and Firebase
 
 ## Create React Project
-Create-react-app
-https://github.com/facebook/create-react-app
+Create-react-app https://github.com/facebook/create-react-app
 ```
 npm init react-app <my-app>
 ```
 
 ## Styling
-Sass
-https://www.npmjs.com/package/node-sass
+Sass https://www.npmjs.com/package/node-sass
 ```
 npm install node-sass
 ```
 
 ## Route
-React Router
-https://reactrouter.com/web/guides/quick-start
+React Router https://reactrouter.com/web/guides/quick-start
 ```
 npm install react-router-dom
 ```
 
 ## Backend
-Firebase
-https://firebase.google.com/docs
-https://www.npmjs.com/package/firebase
+Firebase https://firebase.google.com/docs and https://www.npmjs.com/package/firebase
 ```
 npm i firebase
 ```
 
 ## State Management
-Redux Core 
-https://redux.js.org/  
-React Redux 
-https://react-redux.js.org/  
-Redux Logger 
-https://www.npmjs.com/package/redux-logger  
+Redux Core https://redux.js.org/  
+React Redux https://react-redux.js.org/  
+Redux Logger https://www.npmjs.com/package/redux-logger  
 ```
 npm install redux react-redux redux-logger
 ```
 
 ## Other Libraries
-Reselect 
-https://www.npmjs.com/package/reselect  
-Redux Persist 
-https://www.npmjs.com/package/redux-persist  
+Reselect https://www.npmjs.com/package/reselect  
+Redux Persist https://www.npmjs.com/package/redux-persist  
 
 
 ## Screenshots
