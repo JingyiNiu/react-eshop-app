@@ -34,6 +34,13 @@ Redux Logger https://www.npmjs.com/package/redux-logger
 npm install redux react-redux redux-logger
 ```
 
+## Payment Management
+Stripe https://stripe.com/en-nz   
+React Stripe Checkout Component https://www.npmjs.com/package/react-stripe-checkout   
+```
+npm install react-stripe-checkout
+```
+
 ## Other Libraries
 Reselect https://www.npmjs.com/package/reselect  
 Redux Persist https://www.npmjs.com/package/redux-persist  
