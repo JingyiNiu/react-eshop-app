@@ -41,10 +41,18 @@ React Stripe Checkout Component https://www.npmjs.com/package/react-stripe-check
 npm install react-stripe-checkout
 ```
 
+## Hosting
+Heroku https://www.heroku.com   
+Heroku CLI https://devcenter.heroku.com/articles/heroku-cli   
+Heroku CRA buildpack https://github.com/mars/create-react-app-buildpack   
+```
+heroku create <project-name> --buildpack https://github.com/mars/create-react-app-buildpack.git
+git push heroku master
+```
+
 ## Other Libraries
 Reselect https://www.npmjs.com/package/reselect  
 Redux Persist https://www.npmjs.com/package/redux-persist  
-
 
 ## Screenshots
 ##### Homepage
