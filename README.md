@@ -69,4 +69,4 @@ Styled Components https://styled-components.com/docs/basics
 <img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/shop-and-drop-down.png' width='600' alt='shop'/>
 
 ###### Checkout page
-<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/checkout.png' width='600' alt='checkout'/>
+<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/check-out.png' width='600' alt='checkout'/>
