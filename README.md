@@ -53,6 +53,7 @@ git push heroku master
 ## Other Libraries
 Reselect https://www.npmjs.com/package/reselect  
 Redux Persist https://www.npmjs.com/package/redux-persist  
+Styled Components https://styled-components.com/docs/basics   
 
 ## Screenshots
 ##### Homepage
