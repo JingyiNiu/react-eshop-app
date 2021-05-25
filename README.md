@@ -56,13 +56,16 @@ Redux Persist https://www.npmjs.com/package/redux-persist
 
 ## Screenshots
 ##### Homepage
-<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/homepage.png' width='600' alt='home'/>
+<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/home.png' width='600' alt='home'/>
+
+##### Collection Page
+<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/collection.png' width='600' alt='collection'/>
 
 ##### Sign-in and register page (allow sign-in with google account)
-<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/sign-in-and-register.png' width='600' alt='sign-in-and-register'/>
+<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/sign-in-and-sign-up.png' width='600' alt='sign-in-and-register'/>
 
-###### Shop page and cart
-<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/shop-page-and-cart.png' width='600' alt='shop'/>
+###### Shop page and drop down cart
+<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/shop-and-drop-down.png' width='600' alt='shop'/>
 
 ###### Checkout page
-<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/checkout-page.png' width='600' alt='shop'/>
+<img src='https://github.com/JingyiNiu/react-eshop-app/blob/master/src/screenshots/checkout.png' width='600' alt='checkout'/>
