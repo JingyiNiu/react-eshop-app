@@ -23,7 +23,7 @@ const Header = ({ currentUser, hidden }) => (
       <Link className='option' to='/shop'>
         SHOP
       </Link>
-      <Link className='option' to='/shop'>
+      <Link className='option' to='/contact'>
         CONTACT
       </Link>
 
@@ -34,7 +34,7 @@ const Header = ({ currentUser, hidden }) => (
             SIGN OUT
           </div>
         ) : (
-          <Link className='option' to='./signin'>
+          <Link className='option' to='/signin'>
             SIGN IN
           </Link>
         )
