@@ -9,26 +9,32 @@ import Header from "./components/header/header.component";
 import HomePage from "./pages/homepage/homepage";
 import ShopPage from "./pages/shop/shop";
 import SignInAndRegisterPage from "./pages/sign-in-and-register/sign-in-and-register";
-import CheckoutPage from "./pages/checkout/checkout"
-import ContactPage from "./pages/contact/conntact"
+import CheckoutPage from "./pages/checkout/checkout";
+import ContactPage from "./pages/contact/conntact";
 
-import { auth, createUserProfileDocument } from "./firebase/firebase.config";
+import {
+  auth,
+  createUserProfileDocument,
+  /* addCollectionAndDocuments,*/
+} from "./firebase/firebase.config";
+
 import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selectors";
+// import { selectCollectionsForPreview } from "./redux/shop/shop.selectors";
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
 
   componentDidMount() {
-    const { setCurrentUser } = this.props;
+    const { setCurrentUser /*, collectionsArray*/ } = this.props;
 
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
-      // if userAuth exists
       if (userAuth) {
+        // if userAuth exists
         const userRef = await createUserProfileDocument(userAuth);
 
-        // get back userRef, and combine uid and other properties
         userRef.onSnapshot((snapShot) => {
+          // get back userRef, and combine uid and other properties
           setCurrentUser({
             id: snapShot.id,
             ...snapShot.data(),
@@ -38,6 +44,11 @@ class App extends React.Component {
         // if userAuth doesn't exist, set currentUser to null
         setCurrentUser(userAuth);
       }
+
+      // addCollectionAndDocuments(
+      //   "collections",
+      //   collectionsArray.map(({ title, items }) => ({ title, items }))
+      // );
     });
   }
 
@@ -54,12 +65,11 @@ class App extends React.Component {
           <Route path='/shop' component={ShopPage} />
           <Route path='/contact' component={ContactPage} />
           <Route exact path='/checkout' component={CheckoutPage} />
-          {/*if currentUser property exist, redirect to homepage. 
-          if not, go to sign-in-and-register page}*/}
           <Route
             exact
             path='/signin'
             render={() =>
+              //if currentUser property exist, redirect to homepage. if not, go to sign-in-and-register page
               this.props.currentUser ? (
                 <Redirect to='/' />
               ) : (
@@ -76,6 +86,7 @@ class App extends React.Component {
 // redux store ==pull state==> props
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
+  // collectionsArray: selectCollectionsForPreview,
 });
 
 // props ==update state==> redux store
