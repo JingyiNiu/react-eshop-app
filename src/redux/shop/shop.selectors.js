@@ -12,12 +12,12 @@ export const selectCollections = createSelector(
 export const selectCollectionsForPreview = createSelector(
   [selectCollections],
   // object has paired kay and value, we map all keys in the collection and find the match one
-  (collections) => Object.keys(collections).map((key) => collections[key])
+  (collections) =>
+    collections ? Object.keys(collections).map((key) => collections[key]) : [] // if collections is a null object, return an empty array
 );
 
 // we pass collectionUrlParam and get back corresponding collection object
 export const selectCollection = (collectionUrlParam) =>
-  createSelector(
-    [selectCollections],
-    (collections) => collections[collectionUrlParam]
+  createSelector([selectCollections], (collections) =>
+    collections ? collections[collectionUrlParam] : null
   );
