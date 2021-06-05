@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import { fetchCollectionsStartAsync } from "../../redux/shop/shop.actions";
-import { selectIsCollectionFetching } from "../../redux/shop/shop.selectors.js";
+import { selectIsCollectionFetching, selectIsCollectionsLoaded } from "../../redux/shop/shop.selectors.js";
 
 import WithSpinner from "../../components/with-spinner/with-spinner.component";
 
@@ -24,7 +24,7 @@ class ShopPage extends React.Component {
   // Route could pass match, location and history as props
   // 'match.path' = '/shop' but in a more relative way
   render() {
-    const { match, isCollectionFetching } = this.props;
+    const { match, isCollectionFetching, isCollectionLoaded } = this.props;
 
     return (
       <div className='shop-page'>
@@ -44,7 +44,7 @@ class ShopPage extends React.Component {
           path={`${match.path}/:collectionId`} // navigate to each corresponding category as per the collection id
           render={(props) => (
             <CollectionPageWithSpinner
-              isLoading={isCollectionFetching}
+              isLoading={!isCollectionLoaded} // if collections are loaded, then isLoading = false
               {...props}
             />
           )}
@@ -56,6 +56,7 @@ class ShopPage extends React.Component {
 
 const mapStateToProps = createStructuredSelector({
   isCollectionFetching: selectIsCollectionFetching,
+  isCollectionLoaded: selectIsCollectionsLoaded
 });
 
 const mapDispatchToProps = (dispatch) => ({
