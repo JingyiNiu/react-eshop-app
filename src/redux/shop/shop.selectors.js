@@ -11,8 +11,7 @@ export const selectCollections = createSelector(
 // select state.shop.collections and convert it to an array
 export const selectCollectionsForPreview = createSelector(
   [selectCollections],
-  // object has paired kay and value, we map all keys in the collection and find the match one
-  (collections) =>
+  (collections) => // object has paired kay and value, we map all keys in the collection and find the match one
     collections ? Object.keys(collections).map((key) => collections[key]) : [] // if collections is a null object, return an empty array
 );
 
