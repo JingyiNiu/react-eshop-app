@@ -1,6 +1,6 @@
 # React E-Commerce Shop Application
 
-I'm building an e-shop application with React, Redux, Hooks, GraphQL, ContextAPI, Stripe and Firebase
+This is an ongoing e-commerce shop application with React, Redux and Firebase
 
 ## Create React Project
 Create-react-app https://github.com/facebook/create-react-app
